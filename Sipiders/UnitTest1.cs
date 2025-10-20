@@ -168,7 +168,7 @@ public class Juego
     public bool ValidarVictoria() => true;
     public void TurnoCompletado()
     {
-        throw new NotImplementedException();
+        this.Finalizado = true;
     }
 }
 
