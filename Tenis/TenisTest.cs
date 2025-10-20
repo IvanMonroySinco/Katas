@@ -17,6 +17,20 @@ public class TenisTest
         result.Should().Be("love-all");
 
     }
+    
+    [Fact]
+    public void Debera_Retornar_0_15_SiLosPuntajesSon_0_1()
+    {
+        //Arrage
+        var puntajeJugador1 = 0;
+        var puntajeJugador2 = 1;
+        //Act
+        var scoreCalculator = new TennisScoreCalculator();
+        var result = scoreCalculator.Score(puntajeJugador1, puntajeJugador2);
+        //Asert
+        result.Should().Be("0-15");
+
+    }
 
     public class TennisScoreCalculator
     {
