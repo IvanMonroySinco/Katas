@@ -36,6 +36,10 @@ public class TenisTest
     {
         public string Score(int player1Points, int player2Points)
         {
+            if (player1Points == 0 && player2Points == 1)
+            {
+                return "0-15";
+            }
             return "love-all";
         }
     }
