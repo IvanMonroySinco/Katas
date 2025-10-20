@@ -63,7 +63,7 @@ public class TenisTest
     }
     
     [Fact]
-    public void Debera_Retornar_Deuce_SiLosJugadoresTienenMasDe4PuntosYEstanEmpatados()
+    public void Debera_Retornar_Deuce_SiLosJugadoresTienenMasDe3PuntosYEstanEmpatados()
     {
         //Arrage
         var puntajeJugador1 = 4;
@@ -77,7 +77,7 @@ public class TenisTest
     }
     
     [Fact]
-    public void Debera_Retornar_Ventaja_SiLosJugadoresTienenMasDe4PuntosYUnoLlevaLaVentaja()
+    public void Debera_Retornar_Ventaja_SiLosJugadoresTienenMasDe3PuntosYUnoLlevaLaVentaja()
     {
         //Arrage
         var puntajeJugador1 = 4;
@@ -87,6 +87,20 @@ public class TenisTest
         var result = scoreCalculator.Score(puntajeJugador1, puntajeJugador2);
         //Asert
         result.Should().Be("Ventaja");
+
+    }
+    
+    [Fact]
+    public void Debera_Retornar_Game_SiUnJugadorTieneMasDe4PuntosYLeLlevaAlMenos2DeVentaja()
+    {
+        //Arrage
+        var puntajeJugador1 = 4;
+        var puntajeJugador2 = 2;
+        //Act
+        var scoreCalculator = new TennisScoreCalculator();
+        var result = scoreCalculator.Score(puntajeJugador1, puntajeJugador2);
+        //Asert
+        result.Should().Be("Game");
 
     }
     
