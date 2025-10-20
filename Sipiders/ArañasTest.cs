@@ -17,7 +17,7 @@ public class SpidersTest
     }
 
     [Fact]
-    public void LaAraña_Deberia_MoverseAUnNodoConectado()
+    public void LaAraña_Podra_MoverseAUnNodoConectado()
     {
         //Arrange
         var mapa = new Mapa();
@@ -31,7 +31,7 @@ public class SpidersTest
     }
 
     [Fact]
-    public void LaAraña_NoDebera_MoverseAUnNodoNoConectado()
+    public void LaAraña_NoPodra_MoverseAUnNodoNoConectado()
     {
         //Arrange
         var mapa = new Mapa();
@@ -45,7 +45,7 @@ public class SpidersTest
     }
 
     [Fact]
-    public void LaAraña_Deberia_MoverseAUnNodoConectadoVerticalmente()
+    public void LaAraña_Podra_MoverseAUnNodoConectadoVerticalmente()
     {
         //Arrange
         var mapa = new Mapa();
@@ -59,7 +59,7 @@ public class SpidersTest
     }
 
     [Fact]
-    public void LaAraña_Deberia_MoverseAUnNodoConectadoDiagonalmente()
+    public void LaAraña_Podra_MoverseAUnNodoConectadoDiagonalmente()
     {
         //Arrange
         var mapa = new Mapa();
@@ -73,7 +73,7 @@ public class SpidersTest
     }
 
     [Fact]
-    public void LaAraña_Deberia_MoverseHaciaAtras()
+    public void LaAraña_Podra_MoverseHaciaAtras()
     {
         //Arrange
         var mapa = new Mapa();
@@ -92,7 +92,7 @@ public class SpidersTest
     [InlineData(9)]
     [InlineData(13)]
     [InlineData(17)]
-    public void LaAraña_Deberia_MoverseHaciaTodasLasDirecciones(int idNodo)
+    public void LaAraña_Podra_MoverseHaciaTodasLasDirecciones(int idNodo)
     {
         //Arrange
         var mapa = new Mapa();
@@ -160,5 +160,22 @@ public class SpidersTest
 
         //Assert
         juego.Finalizado.Should().BeFalse();
+    }
+    
+    [Fact]
+    public void Debera_MostrarElMapaConLasPosicionesDeLasArañas()
+    {
+        //Arrange
+        var mapa = new Mapa();
+        var arañaCazadora = new Araña("Cazadora", 8);
+        var arañaPresa = new Araña("Presa", 10);
+
+        //Act
+        var resultado = mapa.MostrarMapa(arañaCazadora.Posicion, arañaPresa.Posicion);
+
+        //Assert
+        resultado.Should().Contain("C");
+        resultado.Should().Contain("P");
+        
     }
 }
