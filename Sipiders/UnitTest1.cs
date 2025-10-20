@@ -20,10 +20,10 @@ public class SpidersTest
 
 public class Araña
 {
-    public object posicion;
+    public int posicion;
 
-    public Araña(string cazadora, int i)
+    public Araña(string cazadora, int posicion)
     {
-        throw new NotImplementedException();
+        this.posicion = posicion;
     }
 }
