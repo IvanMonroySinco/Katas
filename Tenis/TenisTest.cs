@@ -110,6 +110,11 @@ public class TenisTest
                 }
             }
             
+            if ((player1Points >= 3 || player2Points >= 3 )&& (Math.Abs(player1Points - player2Points) == 1))
+            {
+                return "Ventaja";
+            }
+            
             if (player1Points >= 3 && (player1Points == player2Points))
             {
                 return "Deuce";
