@@ -74,6 +74,21 @@ public class SpidersTest
         araña.Posicion.Should().Be(8);
 
     }
+    
+    [Fact]
+    public void LaAraña_Deberia_MoverseHaciaAtras()
+    {
+        //Arrange
+        var mapa = new Mapa();
+        var araña = new Araña("Cazadora", 3);
+        //Act
+        var destino = mapa.Nodos[2];
+        bool movimiento = araña.Mover(destino, mapa);
+        //Assert
+        movimiento.Should().BeTrue();
+        araña.Posicion.Should().Be(2);
+
+    }
 }
 
 public class Mapa
