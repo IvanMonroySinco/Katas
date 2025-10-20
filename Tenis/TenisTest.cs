@@ -64,19 +64,30 @@ public class TenisTest
     {
         public string Score(int player1Points, int player2Points)
         {
-            if (player1Points == 0 && player2Points == 1)
+            string textoPuntaje(int puntaje)
             {
-                return "0-15";
+                switch (puntaje)
+                {
+                    case 0:
+                        return "0";
+                    case 1:
+                        return "15";
+                    case 2:
+                        return "30";
+                    case 3:
+                        return "40";
+                    default:
+                        return "-";
+                }
             }
-            if (player1Points == 0 && player2Points == 2)
+
+            if (player1Points == 0 && player2Points == 0)
             {
-                return "0-30";
+                return "love-all";
             }
-            if (player1Points == 0 && player2Points == 3)
-            {
-                return "0-40";
-            }
-            return "love-all";
+            
+            return textoPuntaje(player1Points) + "-" + textoPuntaje(player2Points);
+            
         }
     }
 }
