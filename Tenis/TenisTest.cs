@@ -46,6 +46,7 @@ public class TenisTest
 
     }
 
+    
     [Fact]
     public void Debera_Retornar_0_40_SiLosPuntajesSon_0_3()
     {
@@ -57,6 +58,20 @@ public class TenisTest
         var result = scoreCalculator.Score(puntajeJugador1, puntajeJugador2);
         //Asert
         result.Should().Be("0-40");
+
+    }
+    
+    [Fact]
+    public void Debera_Retornar_Deuce_SiLosJugadoresTienenMasDe4PuntosYEstanEmpatados()
+    {
+        //Arrage
+        var puntajeJugador1 = 4;
+        var puntajeJugador2 = 4;
+        //Act
+        var scoreCalculator = new TennisScoreCalculator();
+        var result = scoreCalculator.Score(puntajeJugador1, puntajeJugador2);
+        //Asert
+        result.Should().Be("Deuce");
 
     }
     
