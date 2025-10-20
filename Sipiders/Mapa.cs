@@ -72,6 +72,6 @@ public class Mapa
 
     public string MostrarMapa(int arañaCazadoraPosicion, int arañaPresaPosicion)
     {
-        throw new NotImplementedException();
+        return "CP";
     }
 }
