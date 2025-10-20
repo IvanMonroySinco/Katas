@@ -72,6 +72,10 @@ public class TenisTest
             {
                 return "0-30";
             }
+            if (player1Points == 0 && player2Points == 3)
+            {
+                return "0-40";
+            }
             return "love-all";
         }
     }
