@@ -125,11 +125,15 @@ public class TenisTest
                 }
             }
 
+            if ((player1Points >= 4 || player2Points >= 4) && Math.Abs(player1Points - player2Points) >= 2)
+            {
+                return "Game";
+            }
+            
             if (player1Points >= 3 && player2Points >= 3)
             {
                 return ScoreExtraordinario(player1Points, player2Points);
             }
-            
             
             if (player1Points == 0 && player2Points == 0)
             {
