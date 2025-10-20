@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using System.Diagnostics;
+using FluentAssertions;
 
 namespace Tenis;
 
@@ -109,16 +110,12 @@ public class TenisTest
                         return "-";
                 }
             }
-            
-            if ((player1Points >= 3 || player2Points >= 3 )&& (Math.Abs(player1Points - player2Points) == 1))
+
+            if (player1Points >= 3 && player2Points >= 3)
             {
-                return "Ventaja";
+                return ScoreExtraordinario(player1Points, player2Points);
             }
             
-            if (player1Points >= 3 && (player1Points == player2Points))
-            {
-                return "Deuce";
-            }
             
             if (player1Points == 0 && player2Points == 0)
             {
@@ -128,5 +125,19 @@ public class TenisTest
             return textoPuntaje(player1Points) + "-" + textoPuntaje(player2Points);
             
         }
+
+        private string ScoreExtraordinario(int player1Points, int player2Points)
+        {
+            switch (Math.Abs(player1Points - player2Points))
+            {
+                case 0:
+                    return "Deuce";
+                case 1:
+                    return "Ventaja";
+                default:
+                    return "";
+            } ;
+        }
+        
     }
 }
