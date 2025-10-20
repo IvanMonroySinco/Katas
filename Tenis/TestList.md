@@ -2,6 +2,6 @@
 -[x] Debería devolver "0-15" si los puntajes son 0 y 1
 -[x] Debería devolver "0-30" si los puntajes son 0 y 2
 -[x] Debería devolver "0-40" si los puntajes son 0 y 3
--[] Deberia devolver "Deuce" caundo ambos jugadores tienen +3 puntos y estan empatados
+-[X] Deberia devolver "Deuce" caundo ambos jugadores tienen +3 puntos y estan empatados
 -[] Deberia devolver "Advantage" cuando ambos jugadores tienen +3 puntos y existe una diferencia de 1
 -[] Deberia devolver "Game" cuando alguien tiene 4+ puntos Y al menos 2 de ventaja

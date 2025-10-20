@@ -96,6 +96,11 @@ public class TenisTest
                 }
             }
 
+            if (player1Points >= 3 && (player1Points == player2Points))
+            {
+                return "Deuce";
+            }
+            
             if (player1Points == 0 && player2Points == 0)
             {
                 return "love-all";
