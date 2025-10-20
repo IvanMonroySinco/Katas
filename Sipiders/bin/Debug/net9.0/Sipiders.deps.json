@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "Sipiders/1.0.0": {
         "dependencies": {
-          "FluentAssertions": "8.7.1",
+          "FluentAssertions": "8.7.2-beta.1",
           "Microsoft.NET.Test.Sdk": "17.12.0",
           "coverlet.collector": "6.0.2",
           "xunit": "2.9.2",
@@ -19,11 +19,11 @@
         }
       },
       "coverlet.collector/6.0.2": {},
-      "FluentAssertions/8.7.1": {
+      "FluentAssertions/8.7.2-beta.1": {
         "runtime": {
           "lib/net6.0/FluentAssertions.dll": {
-            "assemblyVersion": "8.7.1.0",
-            "fileVersion": "8.7.1.0"
+            "assemblyVersion": "8.7.2.0",
+            "fileVersion": "8.7.2.0"
           }
         }
       },
@@ -364,12 +364,12 @@
       "path": "coverlet.collector/6.0.2",
       "hashPath": "coverlet.collector.6.0.2.nupkg.sha512"
     },
-    "FluentAssertions/8.7.1": {
+    "FluentAssertions/8.7.2-beta.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6DZCiDwyRfsaEvgpNQgahedldMfllILm6rOqyaxW8mHlsdkCIXENb3EnXQcmWu0l0TnAnZ+B4XZqyXQF4YE9jA==",
-      "path": "fluentassertions/8.7.1",
-      "hashPath": "fluentassertions.8.7.1.nupkg.sha512"
+      "sha512": "sha512-oSnvQxB+nI5oNWKwex0s/1ESCVRVs9XyDmdjvZX274+uxA4pj9j1cKFjZGwQFMZ8vpxP+SOVWseKa7YRNyMQqw==",
+      "path": "fluentassertions/8.7.2-beta.1",
+      "hashPath": "fluentassertions.8.7.2-beta.1.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.12.0": {
       "type": "package",

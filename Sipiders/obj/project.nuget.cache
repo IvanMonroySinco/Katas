@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "LdfZRhhZo/0=",
+  "dgSpecHash": "8BqrLCB8+lQ=",
   "success": true,
   "projectFilePath": "C:\\FuentesNET3.0\\Ejemplos\\katas\\KatasTDD\\Sipiders\\Sipiders.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivan.monroy\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
-    "C:\\Users\\ivan.monroy\\.nuget\\packages\\fluentassertions\\8.7.1\\fluentassertions.8.7.1.nupkg.sha512",
+    "C:\\Users\\ivan.monroy\\.nuget\\packages\\fluentassertions\\8.7.2-beta.1\\fluentassertions.8.7.2-beta.1.nupkg.sha512",
     "C:\\Users\\ivan.monroy\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",
     "C:\\Users\\ivan.monroy\\.nuget\\packages\\microsoft.net.test.sdk\\17.12.0\\microsoft.net.test.sdk.17.12.0.nupkg.sha512",
     "C:\\Users\\ivan.monroy\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.12.0\\microsoft.testplatform.objectmodel.17.12.0.nupkg.sha512",

@@ -176,12 +176,18 @@ public class Juego
         this._presa = arañaPresa;
     }
 
+    public int TurnosRestantes { get; set; } = 10;
     public bool Finalizado { get; set; }
-    public bool ValidarVictoria() => true;
+    public bool ValidarVictoria() => _cazadora.Posicion == _presa.Posicion;
 
     public void TurnoCompletado()
     {
-        this.Finalizado = true;
+        if (Finalizado == false)
+            TurnosRestantes--;
+        
+        if (ValidarVictoria() || this.TurnosRestantes == 0) 
+            this.Finalizado = true;
+        
     }
 }
 
