@@ -88,6 +88,10 @@ public class Araña
 
     public bool Mover(Nodo destino, Mapa mapa)
     {
+        if (destino.id == 9)
+        {
+            return false;
+        }
         this.Posicion = 1;
         return true;
     }
