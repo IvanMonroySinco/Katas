@@ -136,12 +136,14 @@ public class Juego
     
     public Juego(Mapa mapa, Araña arañaCazadora, Araña arañaPresa)
     {
+        
+        this._mapa = mapa;
+        this._cazadora = arañaCazadora;
+        this._presa = arañaPresa;
     }
 
-    public bool ValidarVictoria()
-    {
-        return true;
-    }
+    public bool ValidarVictoria() => true;
+    
 }
 
 public class Mapa
