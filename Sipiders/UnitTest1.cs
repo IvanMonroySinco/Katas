@@ -110,7 +110,8 @@ public class SpidersTest
 
     }
 
-    [Fact] public void LaArañaCazadora_GanaraElJuego_Si_LaPosicionDeLaArañaSeguida_EsIgual()
+    [Fact] 
+    public void LaArañaCazadora_GanaraElJuego_Si_LaPosicionDeLaArañaSeguida_EsIgual()
     {
         //Arrange
         var mapa = new Mapa();
@@ -125,6 +126,27 @@ public class SpidersTest
         //Assert
         resultado.Should().BeTrue();
     }
+
+    [Fact]
+    public void ElJuego_Debe_TerminarPasados10Turnos()
+    {
+        //Arrange
+        var mapa = new Mapa();
+        var arañaCazadora = new Araña("Cazadora", 8);
+        var arañaPresa = new Araña("Presa", 10);
+
+        var juego = new Juego(mapa, arañaCazadora, arañaPresa);
+        //Act
+
+        for (int i = 0; i < 10; i++)
+        {
+            juego.TurnoCompletado();
+        }
+
+        //Assert
+        juego.Finalizado.Should().BeTrue();
+    }
+    
     
 }
 
@@ -142,8 +164,12 @@ public class Juego
         this._presa = arañaPresa;
     }
 
+    public bool Finalizado { get; set; }
     public bool ValidarVictoria() => true;
-    
+    public void TurnoCompletado()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class Mapa

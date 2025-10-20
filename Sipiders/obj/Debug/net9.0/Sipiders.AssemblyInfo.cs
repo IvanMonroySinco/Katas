@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sipiders")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15b5855152ee305f25b96f479e0707dcb3af1872")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13dd0bf040b7b2c7f36045cbcde1f41392a5a44c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sipiders")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sipiders")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
