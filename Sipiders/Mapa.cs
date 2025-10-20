@@ -72,6 +72,26 @@ public class Mapa
 
     public string MostrarMapa(int arañaCazadoraPosicion, int arañaPresaPosicion)
     {
-        return "CP";
+        string textoNodos(int id)
+        {
+            if(id == arañaCazadoraPosicion) return "C";
+            if(id == arañaPresaPosicion) return "P";
+            return id.ToString();
+        }
+        return $@"
+                  / ─── {textoNodos(0)} ─── {textoNodos(1)} ─── {textoNodos(2)} ─── {textoNodos(3)}
+                 /      │     │     │     │
+                /       │     │     │     │
+               ╱   ┌─── {textoNodos(4)} ─── {textoNodos(5)} ─── {textoNodos(6)} ─── {textoNodos(7)}
+              ╱   ╱     │     │     │     │
+             ╱   ╱      │     │     │     │
+            {textoNodos(8)} ──────── {textoNodos(9)} ─── {textoNodos(10)} ───{textoNodos(11)} ───{textoNodos(12)}
+             ╲   ╲      │     │     │     │
+              ╲   ╲     │     │     │     │
+               ╲   └───{textoNodos(13)} ───{textoNodos(14)} ───{textoNodos(15)} ───{textoNodos(16)}
+                ╲       │     │     │     │
+                 ╲      │     │     │     │
+                  ╲ ───{textoNodos(17)} ───{textoNodos(18)} ───{textoNodos(19)} ───{textoNodos(20)}
+        ";
     }
 }
