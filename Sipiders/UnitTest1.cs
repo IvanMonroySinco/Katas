@@ -130,14 +130,17 @@ public class SpidersTest
 
 public class Juego
 {
+    private readonly Mapa _mapa;
+    private readonly Araña _cazadora;
+    private readonly Araña _presa;
+    
     public Juego(Mapa mapa, Araña arañaCazadora, Araña arañaPresa)
     {
-        throw new NotImplementedException();
     }
 
     public bool ValidarVictoria()
     {
-        throw new NotImplementedException();
+        return true;
     }
 }
 
