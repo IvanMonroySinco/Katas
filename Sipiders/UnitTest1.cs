@@ -106,7 +106,11 @@ public class Araña
         {
             return false;
         }
-       
+        if (destino.id == 4)
+        {
+            this.Posicion = 4;
+            return true;
+        }
         this.Posicion = 1;
         return true;
     }
