@@ -22,7 +22,7 @@ public class TenisTest
     {
         public string Score(int player1Points, int player2Points)
         {
-            throw new NotImplementedException();
+            return "love-all";
         }
     }
 }
