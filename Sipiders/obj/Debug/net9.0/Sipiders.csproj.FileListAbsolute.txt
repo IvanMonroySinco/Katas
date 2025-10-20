@@ -98,3 +98,4 @@ C:\FuentesNET3.0\Ejemplos\katas\KatasTDD\Sipiders\obj\Debug\net9.0\refint\Sipide
 C:\FuentesNET3.0\Ejemplos\katas\KatasTDD\Sipiders\obj\Debug\net9.0\Sipiders.pdb
 C:\FuentesNET3.0\Ejemplos\katas\KatasTDD\Sipiders\obj\Debug\net9.0\Sipiders.genruntimeconfig.cache
 C:\FuentesNET3.0\Ejemplos\katas\KatasTDD\Sipiders\obj\Debug\net9.0\ref\Sipiders.dll
+C:\FuentesNET3.0\Ejemplos\katas\KatasTDD\Sipiders\bin\Debug\net9.0\Sipiders.exe
