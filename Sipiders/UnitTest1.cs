@@ -109,6 +109,36 @@ public class SpidersTest
         araña.Posicion.Should().Be(idNodo);
 
     }
+
+    [Fact] public void LaArañaCazadora_GanaraElJuego_Si_LaPosicionDeLaArañaSeguida_EsIgual()
+    {
+        //Arrange
+        var mapa = new Mapa();
+        var arañaCazadora = new Araña("Cazadora", 8);
+        var arañaPresa = new Araña("Presa", 8);
+
+        var juego = new Juego(mapa, arañaCazadora, arañaPresa);
+        //Act
+
+        var resultado = juego.ValidarVictoria();
+
+        //Assert
+        resultado.Should().BeTrue();
+    }
+    
+}
+
+public class Juego
+{
+    public Juego(Mapa mapa, Araña arañaCazadora, Araña arañaPresa)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool ValidarVictoria()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class Mapa
