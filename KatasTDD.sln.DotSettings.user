@@ -3,5 +3,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=65fd7a2a_002D70c5_002D4372_002D9d01_002D2f3dd9dffc1f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from UnitTest1.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::D2C4F24B-7A92-4B35-9929-28DFC62BBFE6::net9.0::KatasTDD.SpidersTest.Debera_MostrarElMapaConLasPosicionesDeLasArañas&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1BFE898C-B31B-463D-8643-F04A1024B1E8::net9.0::Tenis.TenisTest.Debera_RetornarLoveAll_DadosAmbosPuntajesEnCero&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::1BFE898C-B31B-463D-8643-F04A1024B1E8::net9.0::Tenis.TenisTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
