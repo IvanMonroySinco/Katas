@@ -12,7 +12,9 @@ public class SpidersTest
         //Act
         var araña = new Araña("Cazadora", 0);
         //Assert
-        araña.posicion.Should().Be(0);
+        araña.Posicion.Should().Be(0);
+        araña.Nombre.Should().Be("Cazadora");
+        
     }
     
     
@@ -20,10 +22,12 @@ public class SpidersTest
 
 public class Araña
 {
-    public int posicion;
+    public string Nombre { get; set; }
+    public int Posicion { get; set; }
 
-    public Araña(string cazadora, int posicion)
+    public Araña(string nombre, int posicion)
     {
-        this.posicion = posicion;
+        this.Nombre = nombre;
+        this.Posicion = posicion;
     }
 }
