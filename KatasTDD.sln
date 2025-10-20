@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatasTDD", "KatasTDD\KatasTDD.csproj", "{D2C4F24B-7A92-4B35-9929-28DFC62BBFE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sipiders", "Sipiders\Sipiders.csproj", "{D2C4F24B-7A92-4B35-9929-28DFC62BBFE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
