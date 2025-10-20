@@ -30,6 +30,21 @@ public class SpidersTest
         araña.Posicion.Should().Be(1);
 
     }
+
+    [Fact]
+    public void LaAraña_NoDebera_MoverseAUnNodoNoConectado()
+    {
+        //Arrange
+        var mapa = new Mapa();
+        var araña = new Araña("Cazadora", 0);
+        //Act
+        var destino = mapa.Nodos[9];
+        bool movimiento = araña.Mover(destino, mapa);
+        //Assert
+        movimiento.Should().BeFalse();
+        araña.Posicion.Should().Be(0);
+    }
+    
 }
 
 public class Mapa
