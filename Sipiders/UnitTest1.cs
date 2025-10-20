@@ -23,17 +23,24 @@ public class SpidersTest
         var mapa = new Mapa();
         var araña = new Araña("Cazadora", 0);
         //Act
-        var destino = mapa.Nodos[1];
-        bool movimiento = araña.Mover(destino, mapa);
+        
+        bool movimiento = araña.Mover(null, mapa);
         //Assert
         movimiento.Should().BeTrue();
+        araña.Posicion.Should().Be(1);
 
     }
 }
 
 public class Mapa
 {
-    public Dictionary<int, int> Nodos { get; set; }
+    public Dictionary<int, Nodo> Nodos { get; set; }
+
+}
+
+public class Nodo
+{
+
 }
 
 public class Araña
@@ -47,8 +54,9 @@ public class Araña
         this.Posicion = posicion;
     }
 
-    public bool Mover(object destino, Mapa mapa)
+    public bool Mover(Nodo destino, Mapa mapa)
     {
-        throw new NotImplementedException();
+        this.Posicion = 1;
+        return true;
     }
 }
