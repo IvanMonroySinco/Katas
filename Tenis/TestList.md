@@ -1,6 +1,6 @@
 ﻿-[x] Debería devolver "love-all" dados ambos puntajes en 0
--[] Debería devolver "0-15" si los puntajes son 0 y 1
--[] Debería devolver "0-30" si los puntajes son 0 y 2
+-[x] Debería devolver "0-15" si los puntajes son 0 y 1
+-[x] Debería devolver "0-30" si los puntajes son 0 y 2
 -[] Debería devolver "0-40" si los puntajes son 0 y 3
 -[] Debería devolver "30-all" dados ambos puntajes en 30
 -[] Debería devolver el puntaje del juego dados los puntos de ambos jugadores

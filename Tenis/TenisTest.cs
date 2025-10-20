@@ -46,6 +46,20 @@ public class TenisTest
 
     }
 
+    [Fact]
+    public void Debera_Retornar_0_40_SiLosPuntajesSon_0_3()
+    {
+        //Arrage
+        var puntajeJugador1 = 0;
+        var puntajeJugador2 = 3;
+        //Act
+        var scoreCalculator = new TennisScoreCalculator();
+        var result = scoreCalculator.Score(puntajeJugador1, puntajeJugador2);
+        //Asert
+        result.Should().Be("0-40");
+
+    }
+    
     public class TennisScoreCalculator
     {
         public string Score(int player1Points, int player2Points)
