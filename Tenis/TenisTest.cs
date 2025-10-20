@@ -75,6 +75,20 @@ public class TenisTest
 
     }
     
+    [Fact]
+    public void Debera_Retornar_Ventaja_SiLosJugadoresTienenMasDe4PuntosYUnoLlevaLaVentaja()
+    {
+        //Arrage
+        var puntajeJugador1 = 4;
+        var puntajeJugador2 = 5;
+        //Act
+        var scoreCalculator = new TennisScoreCalculator();
+        var result = scoreCalculator.Score(puntajeJugador1, puntajeJugador2);
+        //Asert
+        result.Should().Be("Ventaja");
+
+    }
+    
     public class TennisScoreCalculator
     {
         public string Score(int player1Points, int player2Points)
@@ -95,7 +109,7 @@ public class TenisTest
                         return "-";
                 }
             }
-
+            
             if (player1Points >= 3 && (player1Points == player2Points))
             {
                 return "Deuce";
