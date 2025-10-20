@@ -105,6 +105,7 @@ public class Mapa
         Connect(0, 1);
         Connect(0, 4);
         Connect(0, 8);
+        Connect(2, 3);
         
     }
 
