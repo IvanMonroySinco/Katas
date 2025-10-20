@@ -72,9 +72,16 @@ public class Mapa
             Nodos[i] = new Nodo(i);
         }
 
+        Connect(0, 1);
+        Connect(0, 4);
+        
     }
 
-   
+    private void Connect(int nodoA, int nodoB)
+    {
+        Nodos[nodoA].conexiones.Add(Nodos[nodoB]);
+        Nodos[nodoB].conexiones.Add(Nodos[nodoA]);
+    }
 }
 
 public class Nodo
@@ -102,16 +109,13 @@ public class Araña
 
     public bool Mover(Nodo destino, Mapa mapa)
     {
-        if (destino.id == 9)
+        var posicionActual = mapa.Nodos[this.Posicion];
+        if (posicionActual.conexiones.Contains(destino))
         {
-            return false;
-        }
-        if (destino.id == 4)
-        {
-            this.Posicion = 4;
+            this.Posicion = destino.id;
             return true;
         }
-        this.Posicion = 1;
-        return true;
+
+        return false;
     }
 }
