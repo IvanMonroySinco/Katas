@@ -1,4 +1,4 @@
-﻿- [] Crear una araña con una posición
+﻿- [x] Crear una araña con una posición
 - [] Araña se puede mover de nodo 0 a nodo 1
 - [] Araña se puede mover de nodo 1 a nodo 5
 - [] Araña se mueve de nodo 5 a nodo 6
