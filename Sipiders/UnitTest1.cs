@@ -23,8 +23,8 @@ public class SpidersTest
         var mapa = new Mapa();
         var araña = new Araña("Cazadora", 0);
         //Act
-        
-        bool movimiento = araña.Mover(null, mapa);
+        var destino = mapa.Nodos[1];
+        bool movimiento = araña.Mover(destino, mapa);
         //Assert
         movimiento.Should().BeTrue();
         araña.Posicion.Should().Be(1);
@@ -35,12 +35,29 @@ public class SpidersTest
 public class Mapa
 {
     public Dictionary<int, Nodo> Nodos { get; set; }
+    public Mapa()
+    {
+        Nodos = new Dictionary<int, Nodo>();
+        for (int i = 0; i <= 20; i++)
+        {
+            Nodos[i] = new Nodo(i);
+        }
 
+    }
+
+   
 }
 
 public class Nodo
 {
+    public int id { get; set; }
+    public List<Nodo> conexiones { get; set; }
 
+    public Nodo(int id)
+    {
+        this.id = id;
+        this.conexiones = new List<Nodo>();
+    }
 }
 
 public class Araña
