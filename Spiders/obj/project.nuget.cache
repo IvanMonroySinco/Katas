@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8BqrLCB8+lQ=",
+  "dgSpecHash": "HKauTvg3TYw=",
   "success": true,
-  "projectFilePath": "C:\\FuentesNET3.0\\Ejemplos\\katas\\KatasTDD\\Sipiders\\Sipiders.csproj",
+  "projectFilePath": "C:\\FuentesNET3.0\\Ejemplos\\katas\\KatasTDD\\Spiders\\Spiders.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivan.monroy\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\ivan.monroy\\.nuget\\packages\\fluentassertions\\8.7.2-beta.1\\fluentassertions.8.7.2-beta.1.nupkg.sha512",

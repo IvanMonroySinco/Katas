@@ -988,11 +988,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FuentesNET3.0\\Ejemplos\\katas\\KatasTDD\\Sipiders\\Sipiders.csproj",
-      "projectName": "Sipiders",
-      "projectPath": "C:\\FuentesNET3.0\\Ejemplos\\katas\\KatasTDD\\Sipiders\\Sipiders.csproj",
+      "projectUniqueName": "C:\\FuentesNET3.0\\Ejemplos\\katas\\KatasTDD\\Spiders\\Spiders.csproj",
+      "projectName": "Spiders",
+      "projectPath": "C:\\FuentesNET3.0\\Ejemplos\\katas\\KatasTDD\\Spiders\\Spiders.csproj",
       "packagesPath": "C:\\Users\\ivan.monroy\\.nuget\\packages\\",
-      "outputPath": "C:\\FuentesNET3.0\\Ejemplos\\katas\\KatasTDD\\Sipiders\\obj\\",
+      "outputPath": "C:\\FuentesNET3.0\\Ejemplos\\katas\\KatasTDD\\Spiders\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

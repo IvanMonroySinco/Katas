@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sipiders", "Sipiders\Sipiders.csproj", "{D2C4F24B-7A92-4B35-9929-28DFC62BBFE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spiders", "Spiders\Spiders.csproj", "{D2C4F24B-7A92-4B35-9929-28DFC62BBFE6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenis", "Tenis\Tenis.csproj", "{1BFE898C-B31B-463D-8643-F04A1024B1E8}"
 EndProject
